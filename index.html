@@ -10,13 +10,14 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.png') no-repeat center center fixed;
             background-size: cover;
+            color: white;
+            scroll-behavior: smooth;
         }
 
         .content {
             text-align: center;
             position: relative;
             transform: translateY(-40%);
-            color: white;
         }
 
         h1 {
@@ -28,8 +29,7 @@
             text-align: center;
         }
 
-        h2
-        {
+        h2 {
             font-size: 50px;
             background: linear-gradient(90deg, white, gray, #6e525200, black, #6e525200, gray, white);
             -webkit-background-clip: text; 
@@ -51,7 +51,7 @@
             padding: 15px 30px;
             border: 2px solid white;
             border-radius: 5px;
-            font-size: 100%;
+            font-size: 140%;
             transition: background 0.3s, color 0.3s, transform 0.2s;
             display: inline-block;
         }
@@ -62,6 +62,36 @@
             border: 2px solid black;
             transform: scale(1.05); 
         }
+
+        .section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #friends {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        #about {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        #contact {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .section h3 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px; /* רווח בין פסקאות */
+        }
     </style>
 </head>
 <body>
@@ -69,24 +99,54 @@
         <h1>אמוגוס</h1>
         <h2>עדכון: 4.0</h2>
         <div class="buttons">
-            <a href="#play" class="button">שחקו</a>
-            <a href="#about" class="button">About</a>
-            <a href="#contact" class="button">Contact</a>
+            <a href="#friends" class="button">חברי האמוגוס</a>
+            <a href="#about" class="button">היכל התהילה</a>
+            <a href="#contact" class="button">צור קשר</a>
         </div>
     </div>
 
-    <script>
-        // Add JavaScript functionality if needed
-        // Example: Smooth scrolling
-        document.querySelectorAll('a.button').forEach(button => {
-            button.addEventListener('click', event => {
-                event.preventDefault();
-                const targetId = button.getAttribute('href').substring(1);
-                document.getElementById(targetId)?.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <div id="friends" class="section">
+        <h3>חברי האמוגוס</h3>
+        <p>
+            שגיב יוסילבסקי<br>
+            עידו דרורי<br>
+            אופיר כהן<br>
+            ליאל הלמן<br>
+            רותם גוילי<br>
+            בנימין בוקה<br>
+            רון אשכנזי<br>
+            ברק פטל<br>
+            ניר דרמר<br>
+            איליי שמשוני<br>
+        </p>
+    </div>
+
+    <div>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+    </div>
+
+    <div id="about" class="section">
+        <h3>היכל התהילה</h3>
+        <p>ברוכים הבאים להיכל התהילה של האמוגוס!</p>
+        <p>כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים.</p>
+    </div>
+
+    <div>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+    </div>
+
+    <div id="contact" class="section">
+        <h3>צור קשר</h3>
+        <p>?יש לכם שאלות, הצעות או הערות<p>
+        <p><a href="###" style="color:lightblue;">####</a> אתם מוזמנים לפנות אלינו במייל </p>
+    </div>
 </body>
 </html>
