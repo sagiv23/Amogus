@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amogus</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .content {
+            text-align: center;
+            position: relative;
+            transform: translateY(-40%);
+            color: white;
+        }
+
+        h1 {
+            font-size: 15rem;
+            margin-top: 20rem;
+            background: linear-gradient(90deg,#6e525200, black, white, gray, white, black, #6e525200);
+            -webkit-background-clip: text; /* עבור דפדפנים מבוססי WebKit (Chrome, Safari) */
+            -webkit-text-fill-color: transparent; /* הפיכת הטקסט לשקוף כדי לחשוף את הגרדיאנט */
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 30px;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+            border: 2px solid black;
+            transform: scale(1.05); /* אפקט הגדלה קל בהובר */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>אמוגוס 4.0</h1>
+        <div class="buttons">
+            <a href="#play" class="button">שחקו</a>
+            <a href="#about" class="button">About</a>
+            <a href="#contact" class="button">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        // Add JavaScript functionality if needed
+        // Example: Smooth scrolling
+        document.querySelectorAll('a.button').forEach(button => {
+            button.addEventListener('click', event => {
+                event.preventDefault();
+                const targetId = button.getAttribute('href').substring(1);
+                document.getElementById(targetId)?.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
