@@ -92,6 +92,25 @@
             margin: 0 auto;
             margin-bottom: 20px; /* רווח בין פסקאות */
         }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            height: 300px; /* גובה קבוע */
+            width: auto; /* התאמת רוחב */
+            border-radius: 10px;
+            border: 2px solid white;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* הגדלה קלה בהצבעה */
+        }
     </style>
 </head>
 <body>
@@ -103,6 +122,14 @@
             <a href="#about" class="button">היכל התהילה</a>
             <a href="#contact" class="button">צור קשר</a>
         </div>
+    </div>
+
+    <div>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
     </div>
 
     <div id="friends" class="section">
@@ -131,8 +158,14 @@
 
     <div id="about" class="section">
         <h3>היכל התהילה</h3>
-        <p>ברוכים הבאים להיכל התהילה של האמוגוס!</p>
-        <p>כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים.</p>
+        <p>!ברוכים הבאים להיכל התהילה של האמוגוס</p>
+        <p>כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים</p>
+        
+        <div class="gallery">
+            <img src="IMG-20240915-WA0040.jpg" alt="תמונה 1">
+            <img src="IMG-20240915-WA0041.jpg" alt="תמונה 2">
+            <img src="IMG-20241008-WA0062.jpg" alt="תמונה 3">
+        </div>
     </div>
 
     <div>
@@ -142,10 +175,10 @@
         <h1> </h1>
         <h1> </h1>
     </div>
-
+    
     <div id="contact" class="section">
         <h3>צור קשר</h3>
-        <p>?יש לכם שאלות, הצעות או הערות<p>
+        <p>?יש לכם שאלות, הצעות או הערות</p>
         <p><a href="###" style="color:lightblue;">####</a> אתם מוזמנים לפנות אלינו במייל </p>
     </div>
 </body>
