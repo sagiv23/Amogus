@@ -73,7 +73,11 @@
         background: rgba(50, 50, 50, 0.7);
         }
 
-        #about {
+        #groups {
+            background: rgba(65, 65, 65, 0.65);
+        }
+
+        #fame {
             background: rgba(80, 80, 80, 0.6);
         }
 
@@ -123,9 +127,14 @@
             document.getElementById("friends").scrollIntoView({ behavior: 'smooth'});
         }
 
-        function about() {
-            document.getElementById("about").style.display = 'block';
-            document.getElementById("about").scrollIntoView({ behavior: 'smooth'});
+        function groups() {
+            document.getElementById("groups").style.display = 'block';
+            document.getElementById("groups").scrollIntoView({ behavior: 'smooth'});
+        }
+
+        function fame() {
+            document.getElementById("fame").style.display = 'block';
+            document.getElementById("fame").scrollIntoView({ behavior: 'smooth'});
         }
 
         function updates() {
@@ -145,7 +154,8 @@
         <h2>עדכון: 4.0</h2>
         <div class="buttons">
             <button href="#friends" onclick="friends()" class="button">חברי האמוגוס</button>
-            <button href="#about" onclick="about()" class="button">היכל התהילה</button>
+            <button href="#groups" onclick="groups()" class="button">קבוצות האמוגוס</button>
+            <button href="#fame" onclick="fame()" class="button">היכל התהילה</button>
             <button href="#updates" onclick="updates()" class="button">עדכונים</button>
             <button href="#contact" onclick="contact()" class="button">צור קשר</button>
         </div>
@@ -171,7 +181,7 @@
             רון אשכנזי<br>
             ברק פטל<br>
             ניר דרמר<br>
-            איליי שמשוני<br>
+            איליי שמשוני
         </p>
     </div>
 
@@ -183,7 +193,30 @@
         <h1> </h1>
     </div>
 
-    <div id="about" class="section">
+    <div id="groups" class="section">
+        <h3>קבוצות האמוגוס</h3>
+        <p>
+            אמוגוס<br>
+            אמוגוס גיימינג<br>
+            אמוגוס לימודים<br>
+            אמוגוס חדשות חשובות<br>
+            אמוגוס חנות<br>
+            אמוגוס ספורט<br>
+            אמוגוס בנק הזהב<br>
+            אמוגוס חובות<br>
+            Hell of Fame אמוגוס<br>
+        </p>
+    </div>
+
+    <div>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+    </div>
+
+    <div id="fame" class="section">
         <h3>היכל התהילה</h3>
         <p>
             ברוכים הבאים להיכל התהילה של האמוגוס<br>
