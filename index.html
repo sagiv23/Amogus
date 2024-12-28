@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.png') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pics/background.png') no-repeat center center fixed;
             background-size: cover;
             color: white;
             scroll-behavior: smooth;
@@ -69,15 +69,19 @@
         }
 
         #friends {
-            background: rgba(255, 255, 255, 0.1);
+        background: rgba(50, 50, 50, 0.7);
         }
 
         #about {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(80, 80, 80, 0.6);
+        }
+
+        #updates {
+            background: rgba(110, 110, 110, 0.5);
         }
 
         #contact {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(140, 140, 140, 0.4);
         }
 
         .section h3 {
@@ -90,7 +94,7 @@
             line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
-            margin-bottom: 20px; /* רווח בין פסקאות */
+            margin-bottom: 20px;
         }
 
         .gallery {
@@ -101,15 +105,15 @@
         }
 
         .gallery img {
-            height: 300px; /* גובה קבוע */
-            width: auto; /* התאמת רוחב */
+            height: 500px;
+            width: auto;
             border-radius: 10px;
             border: 2px solid white;
             transition: transform 0.3s;
         }
 
         .gallery img:hover {
-            transform: scale(1.05); /* הגדלה קלה בהצבעה */
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -120,6 +124,7 @@
         <div class="buttons">
             <a href="#friends" class="button">חברי האמוגוס</a>
             <a href="#about" class="button">היכל התהילה</a>
+            <a href="#updates" class="button">עדכונים</a>
             <a href="#contact" class="button">צור קשר</a>
         </div>
     </div>
@@ -160,10 +165,10 @@
         <h3>היכל התהילה</h3>
         <p>!ברוכים הבאים להיכל התהילה של האמוגוס</p>
         <p>כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים</p>
-        
+
         <div class="gallery">
-            <img src="IMG-20240915-WA0040.jpg" alt="תמונה 1">
-            <img src="IMG-20240915-WA0041.jpg" alt="תמונה 2">
+            <img src="pics/fame/IMG-20240915-WA0040.jpg" alt="תמונה 1">
+            <img src="pics/fame/IMG-20240915-WA0041.jpg" alt="תמונה 2">
         </div>
     </div>
 
@@ -174,7 +179,27 @@
         <h1> </h1>
         <h1> </h1>
     </div>
-    
+
+    <div id="updates" class="section">
+        <h3>עדכונים</h3>
+        <p style = "text-decoration: underline;">שביל הזהב</p>
+        <div class="gallery">
+            <img style = "height: 700px;" src="pics/updates/MedicalAssistance/1.png" alt="תמונה 1">
+            <img style = "height: 700px;" src="pics/updates/MedicalAssistance/2.png" alt="תמונה 2">
+            <img style = "height: 700px;" src="pics/updates/MedicalAssistance/3.png" alt="תמונה 3">
+            <img style = "height: 700px;" src="pics/updates/MedicalAssistance/4.png" alt="תמונה 4">
+            <img style = "height: 700px;" src="pics/updates/MedicalAssistance/5.png" alt="תמונה 5">
+        </div>
+    </div>
+
+    <div>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+    </div>
+
     <div id="contact" class="section">
         <h3>צור קשר</h3>
         <p>?יש לכם שאלות, הצעות או הערות</p>
