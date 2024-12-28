@@ -54,6 +54,7 @@
             font-size: 140%;
             transition: background 0.3s, color 0.3s, transform 0.2s;
             display: inline-block;
+            cursor: pointer;
         }
 
         .button:hover {
@@ -115,16 +116,38 @@
             transform: scale(1.05);
         }
     </style>
+
+    <script>
+        function friends() {
+            document.getElementById("friends").style.display = 'block';
+            document.getElementById("friends").scrollIntoView({ behavior: 'smooth'});
+        }
+
+        function about() {
+            document.getElementById("about").style.display = 'block';
+            document.getElementById("about").scrollIntoView({ behavior: 'smooth'});
+        }
+
+        function updates() {
+            document.getElementById("updates").style.display = 'block';
+            document.getElementById("updates").scrollIntoView({ behavior: 'smooth'});
+        }
+
+        function contact() {
+            document.getElementById("contact").style.display = 'block';
+            document.getElementById("contact").scrollIntoView({ behavior: 'smooth'});
+        }
+    </script>
 </head>
 <body>
     <div class="content">
         <h1>אמוגוס</h1>
         <h2>עדכון: 4.0</h2>
         <div class="buttons">
-            <a href="#friends" class="button">חברי האמוגוס</a>
-            <a href="#about" class="button">היכל התהילה</a>
-            <a href="#updates" class="button">עדכונים</a>
-            <a href="#contact" class="button">צור קשר</a>
+            <button href="#friends" onclick="friends()" class="button">חברי האמוגוס</button>
+            <button href="#about" onclick="about()" class="button">היכל התהילה</button>
+            <button href="#updates" onclick="updates()" class="button">עדכונים</button>
+            <button href="#contact" onclick="contact()" class="button">צור קשר</button>
         </div>
     </div>
 
@@ -162,8 +185,9 @@
 
     <div id="about" class="section">
         <h3>היכל התהילה</h3>
-        <p>!ברוכים הבאים להיכל התהילה של האמוגוס</p>
-        <p>כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים</p>
+        <p>
+            ברוכים הבאים להיכל התהילה של האמוגוס<br>
+            כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים</p>
 
         <div class="gallery">
             <img style = "width: 45%;" src="pics/fame/IMG-20240915-WA0040.jpg" alt="תמונה 1">
@@ -183,11 +207,11 @@
         <h3>עדכונים</h3>
         <p style = "text-decoration: underline;">שביל הזהב</p>
         <div class="gallery">
-            <img style = "width: 19%;" src="pics/updates/MedicalAssistance/1.png" alt="תמונה 1">
-            <img style = "width: 19%;" src="pics/updates/MedicalAssistance/2.png" alt="תמונה 2">
-            <img style = "width: 19%;" src="pics/updates/MedicalAssistance/3.png" alt="תמונה 3">
-            <img style = "width: 19%;" src="pics/updates/MedicalAssistance/4.png" alt="תמונה 4">
-            <img style = "width: 19%;" src="pics/updates/MedicalAssistance/5.png" alt="תמונה 5">
+            <img style = "width: 18%;" src="pics/updates/MedicalAssistance/1.png" alt="תמונה 1">
+            <img style = "width: 18%;" src="pics/updates/MedicalAssistance/2.png" alt="תמונה 2">
+            <img style = "width: 18%;" src="pics/updates/MedicalAssistance/3.png" alt="תמונה 3">
+            <img style = "width: 18%;" src="pics/updates/MedicalAssistance/4.png" alt="תמונה 4">
+            <img style = "width: 18%;" src="pics/updates/MedicalAssistance/5.png" alt="תמונה 5">
         </div>
     </div>
 
@@ -201,8 +225,8 @@
 
     <div id="contact" class="section">
         <h3>צור קשר</h3>
-        <p>?יש לכם שאלות, הצעות או הערות</p>
-        <p><a href="###" style="color:lightblue;">####</a> אתם מוזמנים לפנות אלינו במייל </p>
+        <p>?יש לכם שאלות, הצעות או הערות</br>
+            אתם מוזמנים לפנות אלינו <a href="amogus23official@gmail.com" style="color:lightblue;">במייל</a></p>
     </div>
 </body>
 </html>
