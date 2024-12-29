@@ -21,8 +21,8 @@
         }
 
         h1 {
-            font-size: 150px;
-            margin-top: 300px;
+            font-size: 937.5%;
+            margin-top: 20%;
             background: linear-gradient(90deg, #6e525200, black, white, gray, white, black, #6e525200);
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
@@ -30,7 +30,7 @@
         }
 
         h2 {
-            font-size: 50px;
+            font-size: 312.5%;
             background: linear-gradient(90deg, white, gray, #6e525200, black, #6e525200, gray, white);
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent; 
@@ -70,11 +70,15 @@
         }
 
         #friends {
-        background: rgba(50, 50, 50, 0.7);
+            background: rgba(50, 50, 50, 0.7);
         }
 
         #groups {
             background: rgba(65, 65, 65, 0.65);
+        }
+
+        #games {
+            background: rgba(75, 75, 75, 0.6);
         }
 
         #fame {
@@ -90,12 +94,12 @@
         }
 
         .section h3 {
-            font-size: 3rem;
+            font-size: 300%;
             margin-bottom: 20px;
         }
 
         .section p {
-            font-size: 1.5rem;
+            font-size: 150%;
             line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
@@ -132,6 +136,11 @@
             document.getElementById("groups").scrollIntoView({ behavior: 'smooth'});
         }
 
+        function games() {
+            document.getElementById("games").style.display = 'block';
+            document.getElementById("games").scrollIntoView({ behavior: 'smooth'});
+        }
+
         function fame() {
             document.getElementById("fame").style.display = 'block';
             document.getElementById("fame").scrollIntoView({ behavior: 'smooth'});
@@ -155,6 +164,7 @@
         <div class="buttons">
             <button href="#friends" onclick="friends()" class="button">חברי האמוגוס</button>
             <button href="#groups" onclick="groups()" class="button">קבוצות האמוגוס</button>
+            <button href="#games" onclick="games()" class="button">משחקי מחשב</button>
             <button href="#fame" onclick="fame()" class="button">היכל התהילה</button>
             <button href="#updates" onclick="updates()" class="button">עדכונים</button>
             <button href="#contact" onclick="contact()" class="button">צור קשר</button>
@@ -195,17 +205,42 @@
 
     <div id="groups" class="section">
         <h3>קבוצות האמוגוס</h3>
-        <p>
-            אמוגוס<br>
-            אמוגוס גיימינג<br>
-            אמוגוס לימודים<br>
-            אמוגוס חדשות חשובות<br>
-            אמוגוס חנות<br>
-            אמוגוס ספורט<br>
-            אמוגוס בנק הזהב<br>
-            אמוגוס חובות<br>
-            Hell of Fame אמוגוס<br>
-        </p>
+        <table style="margin: 0 auto; border-collapse: collapse; width: 80%; text-align: center;">
+            <thead>
+                <tr style="background-color: rgba(50, 50, 50, 0.8);">
+                    <th style="font-size: 120%; padding: 15px; border: 1px solid white;">לא ניתן להתכתב</th>
+                    <th style="font-size: 120%; padding: 15px; border: 1px solid white;">ניתן להתכתב</th>
+                    <th style="font-size: 120%; padding: 15px; border: 1px solid white;">קבוצות עבר</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgba(70, 70, 70, 0.7);">
+                    <td style="padding: 10px; border: 1px solid white;">Hell of Fame אמוגוס</td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס</td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס ספורט</td>
+                </tr>
+                <tr style="background-color: rgba(65, 65, 65, 0.65);">
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס הכרזות</td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס גיימינג</td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס בנק הזהב</td>
+                </tr>
+                <tr style="background-color: rgba(70, 70, 70, 0.7);">
+                    <td style="padding: 10px; border: 1px solid white;"></td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס לימודים</td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס חנות</td>
+                </tr>
+                <tr style="background-color: rgba(65, 65, 65, 0.65);">
+                    <td style="padding: 10px; border: 1px solid white;"></td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס חדשות חשובות</td>
+                    <td style="padding: 10px; border: 1px solid white;">black n white אמוגוס</td>
+                </tr>
+                <tr style="background-color: rgba(70, 70, 70, 0.7);">
+                    <td style="padding: 10px; border: 1px solid white;"></td>
+                    <td style="padding: 10px; border: 1px solid white;">אמוגוס חובות</td>
+                    <td style="padding: 10px; border: 1px solid white;"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div>
@@ -216,6 +251,32 @@
         <h1> </h1>
     </div>
 
+    <div id="games" class="section">
+        <h3>משחקי מחשב</h3>
+        <p>
+            במהלך הפעילות שלנו שיחקנו במשחקי מחשב שונים ומגוונים<br>
+            .שהפכו לזיכרונות בלתי נשכחים<br>
+            :הנה כמה מהמשחקים שהכי נהנינו לשחק
+        </p>
+        <ul style="list-style-type: none; padding: 0; font-size: 150%;">
+            <li><a href="https://youtu.be/TyvkpDVY98M?si=7fz1vAim_Ca8fgOG" target="_blank" style="color: lightblue; text-decoration: none;">סרטון פרטי לחברי האמוגוס</a></li>
+            <li><a href="https://youtu.be/dCg0LknSXh8?si=G_u7RtUoqjSlWxxk" target="_blank" style="color: lightblue; text-decoration: none;">ניר עידו אופיר ורון מגיבים לסיזן 5</a></li>
+            <li><a href="https://youtu.be/pu1PpnFYiEg?si=-eVv_GYw36Bi5gm4" target="_blank" style="color: lightblue; text-decoration: none;">(ציטים NO) אמונג אס רק שעידו יוצא האימפוסטר כל פעם</a></li>
+            <li><a href="https://youtu.be/70Bjj92uoTI?si=HBOGxaRGl3MXN9WT" target="_blank" style="color: lightblue; text-decoration: none;">המקרה בו שימשוני רצח והאשים את השחור</a></li>
+            <li><a href="https://youtu.be/tcxChqc5n6M?si=XUWnTWuG1eXQ1GSk" target="_blank" style="color: lightblue; text-decoration: none;">💀 המקרה בו אופיר האשים את רותם</a></li>
+            <li><a href="https://youtu.be/qn_P-YuIn8U?si=GIjhEoudU05jGR0L" target="_blank" style="color: lightblue; text-decoration: none;">האירוע של עונה 18 בפורטנייט! קווין הקוביה חוזר לפורטנייט</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+    </div>
+
+
     <div id="fame" class="section">
         <h3>היכל התהילה</h3>
         <p>
@@ -223,8 +284,8 @@
             כאן נמצאים השמות של השחקנים הגדולים ביותר, אלה שהובילו את הצוות לניצחונות בלתי נשכחים</p>
 
         <div class="gallery">
-            <img style = "width: 45%;" src="pics/fame/IMG-20240915-WA0040.jpg" alt="תמונה 1">
-            <img style = "width: 45%;" src="pics/fame/IMG-20240915-WA0041.jpg" alt="תמונה 2">
+            <img style = "width: 35%;" src="pics/fame/IMG-20240915-WA0040.jpg" alt="תמונה 1">
+            <img style = "width: 35%;" src="pics/fame/IMG-20240915-WA0041.jpg" alt="תמונה 2">
         </div>
     </div>
 
